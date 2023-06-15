@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>선택해주세요</title>
+  <style>
+    .centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    button {
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="centered">
+    <h2>세 번째, 활동적인? 느긋한?</h2>
+    <button onclick="selectActivity('활동적인')">활동적인</button>
+    <button onclick="selectActivity('느긋한')">느긋한</button>
+  </div>
+  <script>
+    function selectActivity(activity) {
+      if (activity === '활동적인') {
+        window.location.href = 'recommendation.html';
+      } else if (activity === '느긋한') {
+        window.location.href = 'recommendation.html';
+      }
+    }
+  </script>
+</body>
+</html>

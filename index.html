@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>강아지 품종 추천</title>
+  <style>
+    .centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    button {
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="centered">
+    <h1>강아지 품종 추천</h1>
+    <p>본인에게 어울리는 강아지를 찾아 보세요!</p>
+    <button onclick="startSurvey()">시작!</button>
+  </div>
+  <script>
+    function startSurvey() {
+      window.location.href = 'first.html';
+    }
+  </script>
+</body>
+</html>

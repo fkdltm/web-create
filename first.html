@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>선택해주세요</title>
+  <style>
+    .centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    button {
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="centered">
+    <h2>첫 번째, 짧은 털? 기다란 털?</h2>
+    <button onclick="selectCharacteristic('짧은 털')">짧은 털</button>
+    <button onclick="selectCharacteristic('기다란 털')">기다란 털</button>
+  </div>
+  <script>
+    function selectCharacteristic(characteristic) {
+      if (characteristic === '짧은 털') {
+        window.location.href = 'second.html';
+      } else if (characteristic === '기다란 털') {
+        window.location.href = 'second.html';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>선택해주세요</title>
+  <style>
+    .centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    button {
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="centered">
+    <h2>두 번째, 소형견? 대형견?</h2>
+    <button onclick="selectSize('소형견')">소형견</button>
+    <button onclick="selectSize('대형견')">대형견</button>
+  </div>
+  <script>
+    function selectSize(size) {
+      if (size === '소형견') {
+        window.location.href = 'third.html';
+      } else if (size === '대형견') {
+        window.location.href = 'third.html';
+      }
+    }
+  </script>
+</body>
+</html>
